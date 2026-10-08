@@ -11,6 +11,7 @@ import { ResignationDecision } from './components/ResignationDecision';
 import { FarewellLetter } from './components/FarewellLetter';
 import { ImageModal } from './components/ImageModal';
 import { Footer } from './components/Footer';
+import { FloatingElements } from './components/FloatingElements';
 
 export default function App() {
   const [photos, setPhotos] = useState<MemoryPhoto[]>(initialPhotos);
@@ -31,6 +32,7 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-sky-50/70 via-white to-blue-50/50 text-slate-800 selection:bg-sky-400 selection:text-white">
       <ShuttlecockCursor enabled={cursorEnabled} />
+      <FloatingElements />
       <ConfettiEffect
         active={isConfettiActive}
         onComplete={() => setIsConfettiActive(false)}

@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@keyframes ambientFloat {
+  0% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-50px) translateX(35px) rotate(18deg);
+  }
+  50% {
+    transform: translateY(-20px) translateX(-30px) rotate(-12deg);
+  }
+  75% {
+    transform: translateY(-70px) translateX(40px) rotate(22deg);
+  }
+  100% {
+    transform: translateY(-90px) translateX(-35px) rotate(-18deg);
+  }
+}
